@@ -9,11 +9,11 @@
 !
 ! Description
 ! ===========
-! Test program to call precision statements from module
+!
 !
 !
 
-program precision_test
+subroutine precision_interface
 
     use precision_module, only: code => print_precision
 
@@ -21,7 +21,7 @@ program precision_test
 
     call code
 
-end program precision_test
+end subroutine precision_interface
 
 !######################################!
 !                                      !
