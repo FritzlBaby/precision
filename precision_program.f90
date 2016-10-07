@@ -17,9 +17,22 @@ program precision_test
 
     use precision_module, only: code => print_precision
 
+    use, intrinsic :: iso_fortran_env
+
     implicit none
 
-    call code
+    integer, parameter :: sp = REAL32
+    integer, parameter :: dp = REAL64
+
+    real(sp) :: single_precision_in
+    real(dp) :: double_precision_in
+    real     :: real_in
+
+    !single_precision_in = 0.0
+    !double_precision_in = 0.0
+    !real_in             = 0.0
+
+    call code(single_precision_in, double_precision_in, real_in)
 
 end program precision_test
 
