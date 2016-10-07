@@ -29,14 +29,23 @@ contains
 
     subroutine print_precision
 
-        print*, "The precision of single precision is ",precision(single_precision)
-        print*, "The precision of double precision is ",precision(double_precision)
+        print*,
 
-        print*, "The maxmium exponent of single precision is ", maxexponent(single_precision)
-        print*, "The maxmium exponent of double precision is ", maxexponent(double_precision)
+        print*, single_precision
+        print*, "The precision of module internal ISO single precision is ", precision(single_precision)
+        print*, "The range of module internal ISO single precision is ", range(single_precision)
+        print*, "The maxmium exponent of module internal ISO single precision is ", maxexponent(single_precision)
+        print*, "The minimum exponent of module internal ISO single precision is ", minexponent(single_precision)
 
-        print*, "The minimum exponent of single precision is ", minexponent(single_precision)
-        print*, "The minimum exponent of double precision is ", minexponent(double_precision)
+        print*,
+
+        print*, double_precision
+        print*, "The precision of module internal ISO double precision is ", precision(double_precision)
+        print*, "The range of module internal ISO double precision is ", range(double_precision)
+        print*, "The maxmium exponent of module internal ISO double precision is ", maxexponent(double_precision)
+        print*, "The minimum exponent of module internal ISO double precision is ", minexponent(double_precision)
+
+        print*,
 
     end subroutine print_precision
 
