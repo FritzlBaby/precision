@@ -43,7 +43,9 @@ contains
         print*, "The range of module internal ISO single precision is "           , range(single_precision_mi)
         print*, "The maxmium exponent of module internal ISO single precision is ", maxexponent(single_precision_mi)
         print*, "The minimum exponent of module internal ISO single precision is ", minexponent(single_precision_mi)
-
+        print*, "The huge of module internal ISO single precision is "            , huge(single_precision_mi)
+        print*, "The tiny of module internal ISO single precision is "            , tiny(single_precision_mi)
+        print*, "The digits of module internal ISO single precision is "          , digits(single_precision_mi)
         print*,
 
         print*, double_precision_mi
@@ -51,6 +53,9 @@ contains
         print*, "The range of module internal ISO double precision is "           , range(double_precision_mi)
         print*, "The maxmium exponent of module internal ISO double precision is ", maxexponent(double_precision_mi)
         print*, "The minimum exponent of module internal ISO double precision is ", minexponent(double_precision_mi)
+        print*, "The huge of module internal ISO double precision is "            , huge(double_precision_mi)
+        print*, "The tiny of module internal ISO double precision is "            , tiny(double_precision_mi)
+        print*, "The digits of module internal ISO double precision is "          , digits(double_precision_mi)
 
         print*,
 
@@ -59,14 +64,20 @@ contains
         print*, "The range of module internal real is "           , range(real_mi)
         print*, "The maxmium exponent of module internal real is ", maxexponent(real_mi)
         print*, "The minimum exponent of module internal real is ", minexponent(real_mi)
+        print*, "The huge of module internal real is "            , huge(real_mi)
+        print*, "The tiny of module internal real is "            , tiny(real_mi)
+        print*, "The digits of module internal real is "          , digits(real_mi)
 
         print*,
 
         print*, single_precision_in
-        print*, "The precision of intent in single precision is "       , precision(single_precision_in)
-        print*, "The range of intent in single precision is "           , range(single_precision_in)
-        print*, "The maxmium exponent of intent in single precision is ", maxexponent(single_precision_in)
-        print*, "The minimum exponent of intent in single precision is ", minexponent(single_precision_in)
+        print*, "The precision of intent in ISO single precision is "       , precision(single_precision_in)
+        print*, "The range of intent in ISO single precision is "           , range(single_precision_in)
+        print*, "The maxmium exponent of intent in ISO single precision is ", maxexponent(single_precision_in)
+        print*, "The minimum exponent of intent in ISO single precision is ", minexponent(single_precision_in)
+        print*, "The huge of intent in ISO single precision is "            , huge(single_precision_in)
+        print*, "The tiny of intent in ISO single precision is "            , tiny(single_precision_in)
+        print*, "The digits of intent in ISO single precision is "          , digits(single_precision_mi)
 
         print*,
 
@@ -75,6 +86,9 @@ contains
         print*, "The range of intent in double precision is "           , range(double_precision_in)
         print*, "The maxmium exponent of intent in double precision is ", maxexponent(double_precision_in)
         print*, "The minimum exponent of intent in double precision is ", minexponent(double_precision_in)
+        print*, "The huge of module internal ISO single precision is "  , huge(double_precision_in)
+        print*, "The tiny of module internal ISO single precision is "  , tiny(double_precision_in)
+        print*, "The significant binary digits of ISO single precision is"        , digits(single_precision_mi)
 
         print*,
 
@@ -83,6 +97,9 @@ contains
         print*, "The range of intent in real is "           , range(real_in)
         print*, "The maxmium exponent of intent in real is ", maxexponent(real_in)
         print*, "The minimum exponent of intent in real is ", minexponent(real_in)
+        print*, "The huge of intent in real is "            , huge(real_in)
+        print*, "The tiny of intent in real is "            , tiny(real_in)
+        print*, "The significant binary digits of ISO single precision is"        , digits(single_precision_mi)
 
         print*,
 
