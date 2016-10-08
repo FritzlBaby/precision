@@ -48,6 +48,7 @@ contains
         print*, "    Digits   : ", digits(single_precision_mi)
         print*, "    Max exp  : ", maxexponent(single_precision_mi)
         print*, "    Min exp  : ", minexponent(single_precision_mi)
+        print*, "    Kind     : ", kind(single_precision_mi)
         print*,
 
         print*, "Module internal: ISO double precision = ", double_precision_mi
@@ -58,6 +59,7 @@ contains
         print*, "    Digits   : ", digits(double_precision_mi)
         print*, "    Max exp  : ", maxexponent(double_precision_mi)
         print*, "    Min exp  : ", minexponent(double_precision_mi)
+        print*, "    Kind     : ", kind(double_precision_mi)
         print*,
 
         print*, "Module internal: real = ", real_mi
@@ -68,6 +70,7 @@ contains
         print*, "    Digits   : ", digits(real_mi)
         print*, "    Max exp  : ", maxexponent(real_mi)
         print*, "    Min exp  : ", minexponent(real_mi)
+        print*, "    Kind     : ", kind(real_mi)
         print*,
 
         print*, "Intent in: ISO single precision = ", single_precision_in
@@ -78,6 +81,7 @@ contains
         print*, "    Digits   : ", digits(single_precision_in)
         print*, "    Max exp  : ", maxexponent(single_precision_in)
         print*, "    Min exp  : ", minexponent(single_precision_in)
+        print*, "    Kind     : ", kind(single_precision_in)
         print*,
 
         print*, "Intent in: ISO double precision = ", double_precision_in
@@ -88,6 +92,7 @@ contains
         print*, "    Digits   : ", digits(double_precision_in)
         print*, "    Max exp  : ", maxexponent(double_precision_in)
         print*, "    Min exp  : ", minexponent(double_precision_in)
+        print*, "    Kind     : ", kind(double_precision_in)
         print*,
 
         print*, "Intent in: real = ", real_in
@@ -98,6 +103,7 @@ contains
         print*, "    Digits   : ", digits(real_in)
         print*, "    Max exp  : ", maxexponent(real_in)
         print*, "    Min exp  : ", minexponent(real_in)
+        print*, "    Kind     : ", kind(real_in)
         print*,
 
     end subroutine print_precision

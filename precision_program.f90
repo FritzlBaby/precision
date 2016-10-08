@@ -24,9 +24,9 @@ program precision_test
     integer, parameter :: sp = REAL32
     integer, parameter :: dp = REAL64
 
-    real(sp) :: single_precision_in
-    real(dp) :: double_precision_in
-    real     :: real_in
+    real(sp), save :: single_precision_in
+    real(dp), save :: double_precision_in
+    real    , save :: real_in
 
     !single_precision_in = 0.99999999999999999999999999
     !double_precision_in = 0.99999999999999999999999999
