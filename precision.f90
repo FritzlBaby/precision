@@ -36,18 +36,41 @@ contains
         real(dp), intent(in) :: double_precision_in
         real    , intent(in) :: real_in
 
+		print*,
+		print*, "Precision Prints:"
         print*,
 
-        print*, single_precision_mi
-        print*, "The precision of module internal ISO single precision is "       , precision(single_precision_mi)
-        print*, "The range of module internal ISO single precision is "           , range(single_precision_mi)
-        print*, "The maxmium exponent of module internal ISO single precision is ", maxexponent(single_precision_mi)
-        print*, "The minimum exponent of module internal ISO single precision is ", minexponent(single_precision_mi)
-        print*, "The huge of module internal ISO single precision is "            , huge(single_precision_mi)
-        print*, "The tiny of module internal ISO single precision is "            , tiny(single_precision_mi)
-        print*, "The digits of module internal ISO single precision is "          , digits(single_precision_mi)
+		print*, "Module internal: ISO single precision = ", single_precision_mi
+		print*, "\tPrecision: ", precision(single_precision_mi)
+		print*, "\tRange    : ", range(single_precision_mi)
+		print*, "\tTiny     : ", tiny(single_precision_mi)
+		print*, "\tHuge     : ", huge(single_precision_mi)
+		print*, "\tDigits   : ", digits(single_precision_mi)
+		print*, "\tMax exp  : ", maxexponent(single_precision_mi)
+		print*, "\tMin exp  : ", minexponent(single_precision_mi)
         print*,
 
+		print*, "Module internal: ISO double precision = ", double_precision_mi
+		print*, "\tPrecision: ", precision(double_precision_mi)
+		print*, "\tRange    : ", range(double_precision_mi)
+		print*, "\tTiny     : ", tiny(double_precision_mi)
+		print*, "\tHuge     : ", huge(double_precision_mi)
+		print*, "\tDigits   : ", digits(double_precision_mi)
+		print*, "\tMax exp  : ", maxexponent(double_precision_mi)
+		print*, "\tMin exp  : ", minexponent(double_precision_mi)
+        print*,
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
         print*, double_precision_mi
         print*, "The precision of module internal ISO double precision is "       , precision(double_precision_mi)
         print*, "The range of module internal ISO double precision is "           , range(double_precision_mi)
