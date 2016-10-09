@@ -31,7 +31,7 @@ print
 print "Numpy: double precision = {0}".format(double_precision_in)
 print np.finfo(double_precision_in)
 
-precision.precision_module.print_precision(single_precision_in, double_precision_in)
+precision.py_interface(single_precision_in, double_precision_in)
 
 
 ########################################
