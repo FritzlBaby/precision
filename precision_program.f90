@@ -26,13 +26,8 @@ program precision_test
 
     real(sp), save :: single_precision_in
     real(dp), save :: double_precision_in
-    real    , save :: real_in
 
-    !single_precision_in = 0.99999999999999999999999999
-    !double_precision_in = 0.99999999999999999999999999
-    !real_in             = 0.99999999999999999999999999
-
-    call code(single_precision_in, double_precision_in, real_in)
+    call code(single_precision_in, double_precision_in)
 
 end program precision_test
 

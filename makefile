@@ -17,7 +17,7 @@ PEXT = .py
 # names
 FCODE := precision
 PCODE := py_$(FCODE)
-INTER := $(FCODE)_interface$(FEXT)
+INTER := interface$(FEXT)
 
 # source files and objects
 SRC = $(filter-out $(INTER), $(wildcard *$(FEXT)))

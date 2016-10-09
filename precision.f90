@@ -24,20 +24,19 @@ module precision_module
 
     real(sp) :: single_precision_mi
     real(dp) :: double_precision_mi
-    real     :: real_mi
+    !real     :: real_mi
 
 contains
 
-    subroutine print_precision(single_precision_in, double_precision_in, real_in)
+    subroutine print_precision(single_precision_in, double_precision_in)
 
         implicit none
 
         real(sp), intent(in) :: single_precision_in
         real(dp), intent(in) :: double_precision_in
-        real    , intent(in) :: real_in
 
         print*,
-        print*, "Precision Prints:"
+        print*, ">>> From Fortran: Precision Prints:"
         print*,
 
         print*, "Module internal: ISO single precision = ", single_precision_mi
@@ -62,16 +61,16 @@ contains
         print*, "    Kind     : ", kind(double_precision_mi)
         print*,
 
-        print*, "Module internal: real = ", real_mi
-        print*, "    Precision: ", precision(real_mi)
-        print*, "    Range    : ", range(real_mi)
-        print*, "    Tiny     : ", tiny(real_mi)
-        print*, "    Huge     : ", huge(real_mi)
-        print*, "    Digits   : ", digits(real_mi)
-        print*, "    Max exp  : ", maxexponent(real_mi)
-        print*, "    Min exp  : ", minexponent(real_mi)
-        print*, "    Kind     : ", kind(real_mi)
-        print*,
+        !print*, "Module internal: real = ", real_mi
+        !print*, "    Precision: ", precision(real_mi)
+        !print*, "    Range    : ", range(real_mi)
+        !print*, "    Tiny     : ", tiny(real_mi)
+        !print*, "    Huge     : ", huge(real_mi)
+        !print*, "    Digits   : ", digits(real_mi)
+        !print*, "    Max exp  : ", maxexponent(real_mi)
+        !print*, "    Min exp  : ", minexponent(real_mi)
+        !print*, "    Kind     : ", kind(real_mi)
+        !print*,
 
         print*, "Intent in: ISO single precision = ", single_precision_in
         print*, "    Precision: ", precision(single_precision_in)
@@ -93,17 +92,6 @@ contains
         print*, "    Max exp  : ", maxexponent(double_precision_in)
         print*, "    Min exp  : ", minexponent(double_precision_in)
         print*, "    Kind     : ", kind(double_precision_in)
-        print*,
-
-        print*, "Intent in: real = ", real_in
-        print*, "    Precision: ", precision(real_in)
-        print*, "    Range    : ", range(real_in)
-        print*, "    Tiny     : ", tiny(real_in)
-        print*, "    Huge     : ", huge(real_in)
-        print*, "    Digits   : ", digits(real_in)
-        print*, "    Max exp  : ", maxexponent(real_in)
-        print*, "    Min exp  : ", minexponent(real_in)
-        print*, "    Kind     : ", kind(real_in)
         print*,
 
     end subroutine print_precision
