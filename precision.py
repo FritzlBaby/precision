@@ -31,8 +31,11 @@ print
 print "Numpy: double precision = {0}".format(double_precision_in)
 print np.finfo(double_precision_in)
 
+# through interface
 precision.py_interface(single_precision_in, double_precision_in)
 
+# through module/subroutine
+#precision.precision_module.print_precision(single_precision_in, double_precision_in)
 
 ########################################
 #                                      #
