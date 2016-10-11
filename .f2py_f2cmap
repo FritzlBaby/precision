@@ -1,1 +1,1 @@
-dict(real = dict(real32="float", sp="float", dp="double", real64="double"))
+dict(real = dict(real32="float", sp="float", dp="double", real64="double"), integer = dict(int32="long", i4="long", i8="long_long", int64="long_long"))

@@ -82,6 +82,22 @@ contains
     end subroutine print_precision
 
 
+    subroutine array_check(sp_array_in, sp_array_len, dp_array_in, dp_array_len)
+
+        implicit none
+
+        integer(i4), intent(in) :: sp_array_len
+        integer(i4), intent(in) :: dp_array_len
+
+        real(sp), intent(in) :: sp_array_in(sp_array_len)
+        real(dp), intent(in) :: dp_array_in(sp_array_len)
+
+        print*, "Single precision array of length ", sp_array_len, " : ", sp_array_in
+        print*, "Double precision array of length ", dp_array_len, " : ", dp_array_in
+
+    end subroutine array_check
+
+
 end module precision_module
 
 !######################################!
