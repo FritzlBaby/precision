@@ -21,3 +21,12 @@ To make Python callable module (.so):
 To test:
 
     $ ./precision.py
+---
+To import in interactive Python:
+
+    $ python
+    > import precision
+
+Then you can use subroutines in precision like any other Python module
+
+
