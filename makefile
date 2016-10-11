@@ -5,7 +5,7 @@ FCOMP := gfortran
 PCOMP := f2py
 
 # flags
-FCFLAG := -c -Wall
+FCFLAG := -O3 -c -Wall
 FEFLAG := -O3
 PCFLAG := --overwrite-signature
 PEFLAG :=
@@ -33,6 +33,9 @@ fcode: $(OBJ)
 %.o:%$(FEXT)
 	$(FCOMP) $(FCFLAG) $< -o $@
 
+# fortran dependencies
+FDEPN = types
+$(FCODE).o: $(FDEPN).o
 $(FCODE)_program.o: $(FCODE).o
 
 # python rules
@@ -41,7 +44,7 @@ pycode: pysig pymod
 pysig:
 	$(PCOMP) $(PCFLAG) -m $(FCODE) -h $(FCODE).pyf $(FCODE)$(FEXT) $(INTER)
 
-pymod:
+pymod: $(FCODE).o
 	$(PCOMP) $(PEFLAG) -c $(FCODE).pyf $(FCODE)$(FEXT) $(INTER)
 
 fclean:

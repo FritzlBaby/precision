@@ -15,14 +15,11 @@
 
 program precision_test
 
+    use types
+
     use precision_module, only: code => print_precision
 
-    use, intrinsic :: iso_fortran_env
-
     implicit none
-
-    integer, parameter :: sp = REAL32
-    integer, parameter :: dp = REAL64
 
     real(sp), save :: single_precision_in
     real(dp), save :: double_precision_in
