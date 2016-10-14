@@ -41,10 +41,10 @@ $(FCODE)_program.o: $(FCODE).o
 # python rules
 pycode: pysig pymod
 
-pysig:
+pysig: $(FCODE).o
 	$(PCOMP) $(PCFLAG) -m $(FCODE) -h $(FCODE).pyf $(FCODE)$(FEXT) $(INTER)
 
-pymod: $(FCODE).o
+pymod:
 	$(PCOMP) $(PEFLAG) -c $(FCODE).pyf $(FCODE)$(FEXT) $(INTER)
 
 fclean:
